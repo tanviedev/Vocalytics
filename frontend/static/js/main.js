@@ -74,7 +74,7 @@ function populateSkillScores(data) {
                 </div>
 
                 <div class="progress mt-1">
-                    <div class="progress-bar bg-primary" style="width:${percentage}%"></div>
+                    <div class="progress-bar " style="width:${percentage}%"></div>
                 </div>
 
                 <span class="badge bg-secondary mt-1">${level}</span>
@@ -127,11 +127,17 @@ function renderRadarChart(scores) {
                     scores.vocabulary,
                     scores.grammar
                 ],
-                borderRadius: 8
+                backgroundColor: [
+                    '#C2C395',
+                    '#DDBAAE',
+                    '#EFD7CF',
+                    '#818263'
+                ],
+                borderRadius: 12
             }]
         },
         options: {
-            indexAxis: 'y', // horizontal bars
+            indexAxis: 'y',
             responsive: true,
             plugins: {
                 legend: {
@@ -144,12 +150,21 @@ function renderRadarChart(scores) {
                     max: 9,
                     ticks: {
                         stepSize: 1
+                    },
+                    grid: {
+                        color: '#EAE6DA'
+                    }
+                },
+                y: {
+                    grid: {
+                        display: false
                     }
                 }
             }
         }
     });
 }
+
 
 
 /* ---------------- FEEDBACK ---------------- */

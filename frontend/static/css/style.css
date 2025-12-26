@@ -1,43 +1,132 @@
+/* -------------------------------
+   ROOT COLOR VARIABLES
+--------------------------------*/
+:root {
+    --sage: #818263;
+    --avocado: #C2C395;
+    --blush: #DDBAAE;
+    --peach: #EFD7CF;
+    --oat: #DCD4C1;
+    --honey: #F6EAD4;
+    --cream: #FFFAF2;
+    --text-dark: #4a4a4a;
+}
+
+/* -------------------------------
+   GLOBAL
+--------------------------------*/
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--honey);
+    font-family: "Inter", system-ui, sans-serif;
+    color: var(--text-dark);
 }
 
+/* -------------------------------
+   NAVBAR
+--------------------------------*/
+.navbar {
+    background-color: var(--sage) !important;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+/* -------------------------------
+   CARDS
+--------------------------------*/
 .card {
-    border-radius: 12px;
+    background-color: var(--cream);
+    border: 1px solid var(--oat);
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.04);
 }
 
-.display-4 {
-    font-weight: 700;
-    color: #0d6efd;
-}
-
-.skill-label {
+/* -------------------------------
+   HEADINGS
+--------------------------------*/
+h5, h6 {
+    color: var(--sage);
     font-weight: 600;
 }
 
-.progress {
-    height: 10px;
-    border-radius: 6px;
+/* -------------------------------
+   OVERALL SCORE
+--------------------------------*/
+.display-4 {
+    color: var(--sage);
+    font-weight: 700;
 }
 
+/* -------------------------------
+   SKILL BARS
+--------------------------------*/
+.progress {
+    height: 10px;
+    background-color: var(--oat);
+    border-radius: 20px;
+}
+
+.progress-bar {
+    background-color: var(--avocado);
+    border-radius: 20px;
+}
+
+.skill-label {
+    font-weight: 500;
+}
+
+/* -------------------------------
+   BADGES
+--------------------------------*/
 .badge-skill {
+    background-color: var(--peach);
+    color: #5a3e36;
     font-size: 0.75rem;
 }
 
-canvas {
-    max-width: 100%;
+/* -------------------------------
+   STRENGTHS & IMPROVEMENTS
+--------------------------------*/
+.text-success {
+    color: var(--avocado) !important;
+}
+
+.text-warning {
+    color: var(--blush) !important;
+}
+
+.list-group-item {
+    background-color: transparent;
+    border: none;
+    padding-left: 0;
+}
+
+/* -------------------------------
+   BUTTONS
+--------------------------------*/
+.btn-outline-primary {
+    border-color: var(--sage);
+    color: var(--sage);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--sage);
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    transition: 0.2s ease;
 }
 
 @media print {
-    nav, button {
-        display: none;
-    }
-
     body {
-        background: #fff;
+        background: white;
     }
-}
-
-ul {
-    padding-left: 1.2rem;
+    .card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
 }
