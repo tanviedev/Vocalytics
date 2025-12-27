@@ -10,6 +10,7 @@ This project is built as a functional prototype for a Full Stack Development Ass
 Frontend (Vercel):
 👉 https://vocalytics-2j97.vercel.app/
 
+
 📌 Features
 ✅ Summary of Scores
 
@@ -27,11 +28,13 @@ Vocabulary
 
 Grammar
 
+
 📊 Visual Representation
 
 Progress bars for individual skills
 
 Interactive skill comparison chart (Chart.js)
+
 
 🧠 Intelligent Feedback Logic
 
@@ -43,6 +46,7 @@ Personalized improvement recommendations
 
 Target band vs current band comparison
 
+
 🖨️ User Experience
 
 Clean, responsive UI using Bootstrap 5
@@ -50,6 +54,7 @@ Clean, responsive UI using Bootstrap 5
 Print-friendly report layout
 
 Consistent color palette–based design
+
 
 🛠 Tech Stack
 Frontend
@@ -156,6 +161,7 @@ Recommendations
 
 Personalized recommendations are generated automatically for skills scoring below 7.
 
+
 🚫 What Is NOT Included
 
 Database setup
@@ -167,6 +173,7 @@ Admin panel
 AI / ML evaluation
 
 Production backend deployment
+
 
 📈 Evaluation Alignment
 
@@ -182,8 +189,11 @@ Clean and readable code structure
 
 Proper documentation
 
+
+
 👩‍💻 Author
 
 Tanvi Takle
 Full Stack Development Assignment
 December 2025
+
